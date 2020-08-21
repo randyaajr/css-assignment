@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
+/* Above, i added 2 google fonts to add to the character of the site */
+/* Q#: All the elements have margin of 0 from the top, bottom, left, and right */
+* {
+	margin: 0;
+}
+/* 2. The <body> element has to be styled with: */
+body {
+	background: url("../assets/images/dark-wood1.jpg");
+	background-color: #f8f7be;
+	font-family: Lato;
+	margin: 0;
+}
+/*3. Style the <div> element with class “container” */
+.container {
+	width: 950px;
+	margin: 5px auto 5px auto;
+	background-color: #f5f1d9;
+}
+
+/* 4. Style any element with class value of “content”, in other word target the class named “content”: */
+.content {
+	line-height: 1.4em;
+	padding: 10px;
+}
+
+/* styling the header, nav and footer sections. Tyring my best to set it close to the banner brown and text
+to a soft grey */
+
+header, nav, footer {
+	background-color: rgb(248, 167, 62);
+	font-family: Oswald;
+	color: #5a5f61;
+}
+/* 6. Style the unordered list element <ul> which is inside <nav> element (styling only a ul child of any nav
+element): i also removed the style type */
+nav>ul {
+	margin: 0;
+	padding: 5px;
+	list-style-type: none;
+}
+/* Style the list items <li> of the main navigation (nav): */
+
+nav>ul>li {
+	display: inline;
+	margin-right: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/* Add the 4 pseudo classes effect to the anchor tags of the main navigation list items, the colour should
+be changed: */
+
+#main-nav    a:link {
+	color: #5a5f61;
+  }
+  #main-nav  a:visited {
+	color: rgb(143, 84, 49);
+  }
+  #main-nav  a:active {
+	color: rgb(0, 0, 0);
+  }
+  #main-nav  a:hover {
+	color: rgb(255, 255, 255);
+  }
+  
+/* 9. Style any anchor <a> element: colored red to stand out */
+.black a {
+	color: #ff0000;
+	text-decoration: none;
+	font-style: oblique;
+}
+/* Style the three headings: h1, h2, and h3 word spacing was needed to maintain style */
+h1,h2,h3 {
+	margin: 10px;
+	text-transform: uppercase;
+	color: #965832;
+}
+/**11. Style the custom class named “img-centre”: I removed the width from the <img> element **/
+.img-centre {
+	display: block;
+	margin: 5px auto;
+	padding: 2px;
+}
+/**12. Style the <audio> and <video> elements: **/
+video {
+	display: block;
+	margin: 5px auto;
+}
+/** 13. Style any <table> element:removed the border from the html and added the requirements here **/
+table {
+	width: 800px;
+	margin: 10px auto;
+	border: 1.5px solid #000000;
+}
+/** 14. Style both the <td> and <th> element of any table: **/
+td, th {
+	border: 1px solid #000000;
+	padding: 2px 5px;
+	background-color: #f3cfbe;
+}
+/**15. Style both the <th> inside any table and the <td> inside the <tfoot>:**/
+table th, tfoot td {
+	text-transform: uppercase;
+	background-color: #c59985;
+}
+/**16. Style any <dt> element:**/
+dt {
+	font-weight: bold;
+}
+/** 17 Style any <footer> element:**/
+footer {
+	font-size: 80%;
+	text-align: center;
+	padding: 1px 0;
+}
+/**18. Style any <iframe> element:**/
+iframe {
+	display: block;
+	margin: 10px auto;
+}
+/**19. Style any <fieldset> element:**/
+fieldset {
+	width: 500px;
+	margin: 20px auto;
+	border: 2px solid #965832;
+	background-color: #cca48c;
+}
+/**20. Style any <legend> element:**/
+legend {
+	font-style: italic;
+	font-family: Oswald;
+	background-color: #965832;
+	margin: 0 10px;
+	padding: 0 5px;
+	border-radius: 50px 50px 50px 50px;
+}
+/**21. Style the <input> element that has an attribute named “type” with value of “submit”:**/
+input[type="submit"] {
+	border-radius: 50px 50px 50px 50px;
+	padding: 5px;
+	background-color: #965832;
+	color: #f5f1d9;
+}
+/**22. Style the same <input> element that has an attribute named “type” with value of “submit” but with
+the pseudo class for the hover state (when you hover the mouse over the element):**/
+	
+fieldset input[type="submit"]:hover {background-color: #cca48c}
+
+fieldset input[type="submit"] {cursor: pointer;}
+
+/** I added the hr tag to top and bottom to add some style to the page.  **/
+hr {
+	height: 1px;
+	background-color: #000000;
+	border: none;
+}
